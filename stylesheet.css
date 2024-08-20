@@ -1,0 +1,1030 @@
+
+/*----- GENERAL -----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* variables de color */
+    --color-texto: white;
+    --color-fondo: linear-gradient(155deg, rgb(8, 1, 11) 20%, rgb(31, 1, 47) 100%);
+    /* variables de texto*/
+    --fuente: "Manrope", sans-serif;
+    --h1-size: 48px;
+    --h2-size: 28px;
+    --p-size: 16px;
+}
+
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: var(--fuente);
+}
+
+p {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: var(--fuente);
+
+}
+
+h1 {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: var(--fuente);
+    font-size: var(--h1-size);
+}
+
+h2 {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-family: var(--fuente);
+    font-size: var(--h1-size);
+}
+
+li {
+    list-style: none;
+    color: var(--color-texto);
+    font-family: var(--fuente);
+}
+
+body {
+    background: linear-gradient(180deg, #0e0119 0%, #240439 100%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ----- HEADER/NAVBAR ----- */
+
+#header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-block: 30px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 40px;
+    border-radius: 12px;
+    border: 4px solid var(--Black-12, #1F1F1F);
+    background: var(--Black-06, #0F0F0F);
+}
+
+ul:link {
+    border-radius: 8px;
+    border: 1px solid var(--Black-10, #1A1A1A);
+    background: var(--Black-10, #1A1A1A);
+    color: var(--Rosa, #E143A2);
+}
+
+.iconos ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu ul a li:hover {
+    transform: scale(1.1);
+    color: #E143A2;
+}
+
+/* --------  MAIN  -------- */
+
+#main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.20) 0%, rgba(0, 0, 0, 0.00) 133.84%), linear-gradient(0deg, #130322 -0.74%, rgba(17, 6, 28, 0.00) 100%), url(<path-to-image>) lightgray -8.552px -584.294px / 101.07% 269.71% no-repeat;
+    padding-bottom: 10px;
+}
+
+#main .banner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 50px;
+    color: white;
+    position: relative;
+    margin-top: 25em;
+}
+
+#main .botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.banner p {
+    padding-inline: 10em;
+}
+
+.botonera a {
+    display: flex;
+    padding: 14px 24px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.botonera a:hover {
+    transform: scale(1.3);
+}
+
+.verahora {
+     background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.verahora:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ------ PLATAFORMAS ------ */
+
+.plataformas {
+    margin-top: 5em;
+}
+
+
+/* ------ CONTINUAR MIRANDO ------ */
+
+.continuar_mirando {
+    margin-inline: 5em;
+}
+
+.contenedor2 div h2 {
+    font-size: var(--h2-size);
+    color: var(--color-texto);
+    font-family: var(--fuente);
+    margin-block: 2em;
+}
+
+.mirando {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mirando img {
+    width: 30%;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.mirando img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E143A2;
+
+}
+
+.mirando img:hover .mirando1 {
+    transform: scale(1.2);
+}
+
+
+/* ------ PLAYLISTS ------- */
+
+.nombresección h2 {
+    font-size: var(--h2-size);
+    color: var(--color-texto);
+    font-family: var(--fuente);
+    margin-block: 2em;
+}
+
+.playlists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.mis_playlist {
+    margin-inline: 5em;
+}
+
+.nombreplaylist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardPlaylist {
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #2E1E35;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.cardPlaylist:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E143A2;
+}
+
+
+
+/* ------ CATEGORIAS ------ */
+
+.categorias {
+    margin-inline: 5em;
+}
+
+.seccionGeneros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genero {
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #2E1E35;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.genero:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E143A2;
+}
+
+
+
+/* ------- TRENDING ------- */
+
+#seccionTrending {
+    margin-inline: 5em;
+}
+
+.pelistrending {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #2E1E35;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.trending:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E143A2;
+}
+
+.duracion {
+    display: flex;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #0E0219;
+    padding: .5em;
+    font-size: 13px;
+    align-items: center;
+}
+
+.vistas {
+    display: flex;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: #0E0219;
+    padding: .5em;
+    font-size: 13px;
+    align-items: center;
+}
+
+.datatrending {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+
+/* -------- FOOTER ------- */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    padding: 100px 162px 50px 162px;
+    gap: 50px;
+    background: #1B072A;
+    max-width: 100%;
+    margin-top: 5em;
+}
+
+.mapadesitio {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.mapadesitio div p {
+    color: #999;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes img {
+    border-radius: 8px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-10, #1A1A1A);
+    box-shadow: 0 0 10px #eee;
+    width: 20%;
+}
+.redes img:hover {
+    box-shadow: 0 0 10px rgb(219, 55, 205);
+}
+
+.siganos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.legales {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legales div {
+    display: flex;
+    gap: 2em;
+
+}
+
+.legales div p {
+    color: #999;
+}
+
+.legales p {
+    color: #999;
+}
+
+.mapadesitio div h3 {
+    color: var(--Absolute-White, #FFF);
+    font-family: var(--fuente);
+    font-weight: 600;
+    line-height: 150%
+}
+
+
+
+/* -------- PAGINA PERFIL -------- */
+
+/* ------background img------ */
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.4;
+    max-width: fit-content;
+}
+
+/* ----- Usuario y Foto de Perfil ----- */
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-content: end;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "fotoPerfil div";
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.fotoPerfil {
+    justify-self: end;
+    align-self: center;
+    padding-right: 50px;
+    grid-area: fotoPerfil;
+}
+
+.div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+        "perfil perfil perfil"
+        "h1 h1 h1"
+        "p p p";
+    justify-self: start;
+    align-self: center;
+    grid-area: div;
+}
+
+.perfil {
+    align-self: end;
+    grid-area: perfil;
+}
+
+.h1 {
+    font-size: 4rem;
+    grid-area: h1;
+}
+
+.p {
+    grid-area: p;
+}
+
+#empty {
+    padding-bottom: 250px;
+}
+
+/* -------  Datos del Usuario ------*/
+
+#datosUsuario .contenedor6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(27, 15, 36);
+    margin: 0px;
+    padding: 50px;
+    border-color: rgb(99, 99, 99);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 1.8rem;
+}
+
+.contenedor7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.contenedor7 a span:hover {
+    transform: scale(1.3);
+    color: #E143A2;
+}
+
+.contenedor8 {
+    display: flex;
+    display: row;
+}
+
+.cardInterna {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(39, 33, 43);
+    margin: 10px;
+    padding: 50px;
+    border-color: rgb(99, 99, 99);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.cardInterna .ps {
+    font-size: 0.6rem;
+    color: rgb(188, 188, 188);
+}
+
+.cardInterna .pm {
+    font-size: 0.8rem;
+}
+
+.cardInterna .pg {
+    font-size: larger;
+}
+
+.misSubidos {
+    margin-inline: 5em;
+}
+
+
+/* -------- PLAN MENSUAL -------- */
+
+#planesMensuales .contenedor9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0px;
+    padding: 50px;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.card2 p {
+    font-size: 1.8rem;
+}
+
+.contenedor10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.contenedor10 a span:hover {
+    transform: scale(1.3);
+    color: #E143A2;
+}
+
+.contenedor10 .ps {
+    font-size: 0.6rem;
+    color: rgb(188, 188, 188);
+}
+
+.contenedor10 .pm {
+    font-size: 0.8rem;
+}
+
+.contenedor10 .pg {
+    font-size: 1.5rem;
+}
+
+.contenedor11 {
+    display: flex;
+    display: row;
+}
+
+.cardInterna2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(39, 33, 43);
+    margin: 10px;
+    padding: 50px;
+    border-color: rgb(99, 99, 99);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.cardInterna2 .ps {
+    font-size: 0.6rem;
+    color: rgb(188, 188, 188);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.cardInterna2 .pm {
+    font-size: 0.8rem;
+    color: rgb(188, 188, 188);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.cardInterna2 .pg {
+    font-size: larger;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.actual {
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.actual:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.upgrade {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.upgrade:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+div .btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btnGroup button {
+    background-color: rgb(39, 33, 43);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    margin-right: 3px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.btnGroup button:not(:last-child) {
+    border-right: none;
+}
+
+.btnGroup button:hover {
+    background-color: rgb(39, 33, 43);
+    color: #E143A2;
+    box-shadow: 0 0 10px rgb(183, 5, 168);
+}
+
+
+/* ------- PAGINA COMUNIDAD -------*/
+
+/*  ------ portada ------- */
+#portadaComunidad {
+   margin-top: 100px;
+}
+
+#background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.4;
+    max-width: fit-content;
+}
+
+.container2 {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotoBurbujas {
+    width: 400px;
+    height: 400px;
+}
+
+.tituloComunidad {
+    font-size: 4.5rem;
+}
+
+.subtituloComunidad {
+    font-size: 1.5rem;
+}
+
+/* ------ info perfil ------- */
+#infoPerfil {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(27, 15, 36);
+    margin: 20px;
+    padding: 80px;
+    border-color: rgb(99, 99, 99);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+#infoPerfil div a img {
+    width: 40px;
+    height: 40px;
+}
+
+#infoPerfil h1 {
+    font-size: 2rem;
+}
+
+#infoPerfil div img {
+    width: 100px;
+    height: 100px;
+}
+
+.informacionDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.informacionPerfil {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.datosFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.dato {
+    margin: 10px;
+    padding: 10px;
+}
+
+.dato p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.dato a {
+    margin: 0px 5px;;
+}
+
+.dato a img {
+    border-radius: 8px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-10, #1A1A1A);
+    box-shadow: 0 0 8px #eee;
+}
+
+.dato a img:hover{
+    box-shadow: 0 0 10px rgb(219, 55, 205);
+}
+
+.fotoPerfilComunidad {
+    width: 150px;
+    height: 150px;
+}
+
+.informacionPerfil2 {
+    margin: 0px;
+}
+
+.informacionPerfil2 .ps {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: rgb(164, 155, 173);
+}
+
+/* ----- seccion mas comentados ------ */
+
+.contenedorComentados{
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloComentados {
+    font-size: 1.5rem;
+}
+
+.bloqueComentados {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+.cardComentados {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardComentados img {
+    width: 80px;
+    height: 80px;
+}
+
+.cardInternaComentados {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.cardInternaComentados h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.cardInternaComentados p {
+    font-size: 0.85rem;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+/* ------ seccion deabtes populares------ */
+
+.contenedorDebates {
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloDebate {
+    font-size: 1.5rem;
+}
+
+.bloqueDebate {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloqueDebate img {
+    width: 50px;
+    height: 50px;
+}
+
+.bloqueDebate form input {
+    padding: 0px 15px;
+    color: white;
+    background-color: rgb(33, 21, 38);
+    height: 40px;
+    border-radius: 5px;
+}
+
+.btnEnviar {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    margin: 10px;
+    padding: 12px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btnEnviar:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bloqueDebate2 {
+    background-color: rgba(13,12,15, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDebate{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.debateTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.debateTexto h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.debateTexto p {
+    padding: 5px 0px;
+    font-size: 0.9rem;
+}
+
+.debateTexto div {
+    padding:0px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.debateTexto div a p {
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+
+.ajustarImagen{
+    width: 190px;
+    height: 140px;
+}
+
+/*  ------- SECCION LO MAS VISTOS  ------*/
+
+#masVistos {
+    margin: 100px;
+}
+ #masVistos h1 {
+    font-size: 1.5rem;
+    padding: 20px 0px;
+ }
+
+ #masVistos .cardPlaylist {
+    margin: 10px;
+ }
